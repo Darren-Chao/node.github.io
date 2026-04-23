@@ -29,7 +29,7 @@ export async function getUser() {
 
 // Update UI based on auth state
 export function updateAuthUI(user) {
-  const signInLinks = document.querySelectorAll('.nav-user-link, .nav-signin-btn');
+  const signInLinks = document.querySelectorAll('.nav-user-link, .nav-signin-btn, .mobile-signin-link');
   
   signInLinks.forEach(link => {
     // Remove old listeners to prevent duplicates

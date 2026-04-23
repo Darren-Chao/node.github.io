@@ -3,15 +3,15 @@ import { getUser, updateAuthUI } from './auth.js'
 
 console.log('NODE Landing Page Initialized');
 
-// Initialize Auth UI immediately (logged out state)
-updateAuthUI(null);
-
-// Check current user status
-getUser().then(user => {
-  if (user) updateAuthUI(user);
-}).catch(err => {
-  console.error('Auth check failed:', err);
-});
+// Auth check function
+const checkAuth = () => {
+  getUser().then(user => {
+    updateAuthUI(user);
+  }).catch(err => {
+    console.error('Auth check failed:', err);
+    updateAuthUI(null);
+  });
+};
 
 // Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -85,6 +85,9 @@ if (!mobileMenu) {
     }
   });
 }
+
+// Ensure auth is initialized for all platforms (mobile + desktop)
+checkAuth();
 
 if (mobileMenuBtn) {
   mobileMenuBtn.addEventListener('click', () => {
