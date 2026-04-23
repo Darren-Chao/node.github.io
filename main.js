@@ -3,12 +3,14 @@ import { getUser, updateAuthUI } from './auth.js'
 
 console.log('NODE Landing Page Initialized');
 
-// Initialize Auth
+// Initialize Auth UI immediately (logged out state)
+updateAuthUI(null);
+
+// Check current user status
 getUser().then(user => {
-  updateAuthUI(user);
+  if (user) updateAuthUI(user);
 }).catch(err => {
-  console.error('Auth initialization error:', err);
-  updateAuthUI(null);
+  console.error('Auth check failed:', err);
 });
 
 // Mobile Menu Toggle

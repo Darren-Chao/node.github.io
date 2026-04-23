@@ -259,6 +259,7 @@ h2 {
     transition: all 0.3s ease;
     padding: 6px 12px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .nav-user-link:hover {
