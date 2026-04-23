@@ -1,6 +1,7 @@
 import { supabase } from './supabase.js'
 
 export async function signInWithGoogle() {
+  console.log('Attempting Google Sign In...');
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
     options: {

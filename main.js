@@ -6,6 +6,9 @@ console.log('NODE Landing Page Initialized');
 // Initialize Auth
 getUser().then(user => {
   updateAuthUI(user);
+}).catch(err => {
+  console.error('Auth initialization error:', err);
+  updateAuthUI(null);
 });
 
 // Mobile Menu Toggle
