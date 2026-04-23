@@ -23,20 +23,67 @@ if (!mobileMenu) {
   mobileMenu = document.createElement('div');
   mobileMenu.className = 'nav-links-mobile';
   
-  // Clone links for mobile
-  const leftLinks = document.querySelectorAll('.nav-links-left li');
-  const rightLinks = document.querySelectorAll('.nav-links-right li');
-  
-  const allLinks = [...leftLinks, ...rightLinks];
-  allLinks.forEach(li => {
-    // Only clone the top level links
-    if (!li.closest('.dropdown-menu')) {
-      const clone = li.cloneNode(true);
-      mobileMenu.appendChild(clone);
-    }
-  });
+  mobileMenu.innerHTML = `
+    <div class="mobile-menu-header">
+      <a href="shop.html" class="mobile-shop-link">Shop</a>
+      <div class="mobile-header-right">
+        <button class="mobile-search-trigger" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="#" class="mobile-signin-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Sign In
+        </a>
+      </div>
+    </div>
+    <div class="mobile-divider"></div>
+    <div class="mobile-secondary-links">
+      <a href="educators.html">For <b>Education</b></a>
+      <a href="makers.html">For <b>Makers</b></a>
+    </div>
+    <div class="mobile-divider"></div>
+    <div class="mobile-category-links">
+      <div class="mobile-category">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="kit1-info.html">NODE Kit 1</a></li>
+          <li><a href="sensor-kit-info.html">Sensor Expansion Kit</a></li>
+        </ul>
+      </div>
+      <div class="mobile-category">
+        <h3>Community</h3>
+        <ul>
+          <li><a href="project-hub.html">Project Hub</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="github-mock.html">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="mobile-category">
+        <h3>Documentation</h3>
+        <ul>
+          <li><a href="hardware-docs.html">Hardware Docs</a></li>
+          <li><a href="software-docs.html">Software Docs</a></li>
+          <li><a href="guides.html">Guides</a></li>
+        </ul>
+      </div>
+    </div>
+  `;
   
   document.body.appendChild(mobileMenu);
+
+  // Bind mobile search trigger
+  mobileMenu.querySelector('.mobile-search-trigger').addEventListener('click', (e) => {
+    e.preventDefault();
+    mobileMenu.classList.remove('active');
+    body.classList.remove('mobile-menu-active');
+    // We need to wait for search logic to be initialized or use the same function
+    if (typeof openSearch === 'function') {
+        openSearch();
+    } else {
+        // Fallback: trigger click on any desktop search button to fire the listener
+        document.querySelector('.search-btn').click();
+    }
+  });
 }
 
 if (mobileMenuBtn) {
