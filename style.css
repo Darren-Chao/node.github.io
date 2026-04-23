@@ -605,6 +605,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding-top: var(--nav-height);
+  }
+
   .container {
     padding: 0 16px;
     max-width: 480px; /* Slightly tighter container */
@@ -897,6 +901,8 @@ h2 {
   .newsletter-form input {
     font-size: 0.85rem;
     padding: 12px 16px;
+    width: 100%;
+    max-width: 300px;
   }
   
   .newsletter-form input::placeholder {
