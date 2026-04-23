@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+update_links.py
+update_store_navbar.py
+update_cart_links.py
+generate_index.py

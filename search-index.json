@@ -1,0 +1,107 @@
+[
+  {
+    "url": "about.html",
+    "title": "About - NODE",
+    "content": "About Us Our Mission We are building the future of STEAM education through cardboard-based robotics and iterative design."
+  },
+  {
+    "url": "careers.html",
+    "title": "Careers - NODE",
+    "content": "Careers Join the Team Help us redefine engineering education for the next generation."
+  },
+  {
+    "url": "contact.html",
+    "title": "Contact Us - NODE",
+    "content": "Contact Get in Touch Have questions about NODE? We'd love to hear from you. Fill out the form and our team will get back to you shortly. Name Return Email Subject Message Send Message"
+  },
+  {
+    "url": "discord-mock.html",
+    "title": "Discord - NODE",
+    "content": "Community Discord Server Join the conversation, get real-time help, and hang out with the NODE community."
+  },
+  {
+    "url": "discover.html",
+    "title": "Discover - NODE",
+    "content": "Discover Explore the Possibilities Discover how NODE is transforming physical prototyping into a digital-first learning experience."
+  },
+  {
+    "url": "educators.html",
+    "title": "For Educators - NODE",
+    "content": "Educators Scale Engagement Low-cost, high-engagement STEM tools designed for the modern classroom."
+  },
+  {
+    "url": "forum.html",
+    "title": "Forum - NODE",
+    "content": "Community NODE Forum Share your projects, ask questions, and connect with other makers."
+  },
+  {
+    "url": "github-mock.html",
+    "title": "GitHub - NODE",
+    "content": "Community GitHub Repository Access our open-source behavior libraries, hardware designs, and documentation source files."
+  },
+  {
+    "url": "guides.html",
+    "title": "Guides - NODE",
+    "content": "Documentation Guides Step-by-step projects and walk-throughs to get you from cardboard to creation."
+  },
+  {
+    "url": "hardware-docs.html",
+    "title": "Hardware Docs - NODE",
+    "content": "Documentation Hardware Docs Technical specifications and assembly guides for all NODE hardware components."
+  },
+  {
+    "url": "hardware.html",
+    "title": "Hardware - NODE",
+    "content": "Hardware The Engineering Layer Discover the sensors, connectors, and boards that make up the NODE ecosystem."
+  },
+  {
+    "url": "index.html",
+    "title": "Node - Educational Learning Kit",
+    "content": "NODE Kit 1: Programming with Cardboard Discover More The Core Shift From Assembly to Iteration Traditional kits teach you to follow instructions. NODE turns cardboard into an intelligent medium where you Design, Test, Fail, and Iterate. This is the missing layer in engineering education. System Architecture Cardboard is not a cheap substitute\u2014it's a sketching medium for physical systems. \ud83d\udce6 Physical Layer Modular connectors turn electronics into \"plug-in art supplies\" that integrate directly into cardboard structures. The Hardware \u2192 \ud83d\udcbb Digital Layer Arduino-based control with a \"behavior-first\" philosophy. Describe how your system reacts to the world. The Software \u2192 \ud83d\udd04 Interaction Layer A tight design loop: Test physical response, observe failure modes, and redesign instantly. The Loop \u2192 Designed for Every Learner \ud83c\udfa8 The Maker Expressive, narrative-driven robotics using everyday materials. Ruijia \ud83d\udee0\ufe0f The Student Prototype smart products without wiring complexity or abstract barriers. Darren \ud83c\udfeb The Teacher Low-cost, high-engagement STEM that scales across classrooms. Mr. Jialong"
+  },
+  {
+    "url": "kit1.html",
+    "title": "NODE Kit 1 - NODE",
+    "content": "\ud83d\udce6 Flagship Kit NODE Starter Kit $149.00 The NODE Starter Kit is the perfect entry point into the world of cardboard robotics. \n                            It includes our modular Arduino-based controller, high-torque servos, and a variety of \n                            custom-designed cardboard templates to get you building in minutes. Sold Out Unable to Purchase Check out other products"
+  },
+  {
+    "url": "makers.html",
+    "title": "For Makers - NODE",
+    "content": "Makers Unleash Creativity Build expressive, narrative-driven robotics with the materials you already have."
+  },
+  {
+    "url": "project-hub.html",
+    "title": "Project Hub - NODE",
+    "content": "Community Project Hub Explore what others have built and find inspiration for your next cardboard creation."
+  },
+  {
+    "url": "sensor-kit.html",
+    "title": "Sensor Expansion Kit - NODE",
+    "content": "\ud83d\udd0c Expansion Pack NODE Sensor Expansion Kit $79.00 Take your NODE projects to the next level with the Sensor Expansion Kit. \n                            Includes high-precision ultrasonic distance sensors, ambient light sensors, \n                            and sound detection modules. All sensors feature our standard plug-and-play connectors. Sold Out Unable to Purchase Check out other products"
+  },
+  {
+    "url": "software-docs.html",
+    "title": "Software Docs - NODE",
+    "content": "Documentation Software Docs API references, behavior libraries, and coding tutorials for the NODE platform."
+  },
+  {
+    "url": "software.html",
+    "title": "Software - NODE",
+    "content": "Software The Behavioral Layer Program your creations using the Arduino IDE and our custom-built behaviors."
+  },
+  {
+    "url": "shop.html",
+    "title": "Shop - NODE",
+    "content": "Shop Everything NODE Get started with the world's most versatile cardboard robotics ecosystem. Sold Out \ud83d\udce6 NODE Starter Kit The flagship starter kit for cardboard robotics and creative engineering. Includes everything you need to build your first 10 projects. Unable to Purchase Sold Out \ud83d\udd0c NODE Sensor Expansion Kit Expand your projects with ultrasonic, light, and sound sensors. Perfect for advanced interactive designs. Unable to Purchase Sold Out \ud83d\udcd0 Free NODE Connectors STL File Download Download our official 3D-printable connectors to build custom NODE-compatible parts. Unable to Purchase Your gateway to NODE Deals Sign up for email updates and be the first to know about deals and new products. Join"
+  },
+  {
+    "url": "cart.html",
+    "title": "Your Cart - NODE",
+    "content": "\ud83d\uded2 Your cart is empty Looks like you haven't added anything to your cart yet. Back to Shopping"
+  },
+  {
+    "url": "connectors-stl.html",
+    "title": "NODE Connectors STL - NODE",
+    "content": "\ud83d\udcd0 Digital Asset Free NODE Connectors STL File Download $0.00 Download our official 3D-printable connectors to build custom NODE-compatible parts. \n                            These files are optimized for FDM printing and allow you to create modular attachments \n                            for any cardboard project. Sold Out Unable to Purchase Check out other products"
+  }
+]
