@@ -795,6 +795,17 @@ h2 {
   opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+  .mission, .features, .ecosystem, .contact-section, .shop-section, .product-detail {
+    padding: 60px 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .mission-content {
+    text-align: center;
+    padding: 0 16px;
+  }
+}
 /* Mission */
 .mission {
   padding: 120px 0;
@@ -1137,6 +1148,27 @@ h2 {
   font-size: 5rem;
 }
 
+@media (max-width: 768px) {
+  .product-detail-image {
+    height: 300px !important;
+    font-size: 4rem !important;
+  }
+  
+  .product-info-section {
+    padding: 60px 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail-info {
+    text-align: center;
+  }
+  
+  .product-detail-info ul {
+    text-align: left;
+    display: inline-block;
+  }
+}
 .product-detail-info h1 {
   margin-bottom: 16px;
 }
@@ -1191,6 +1223,13 @@ h2 {
   color: var(--text-dark);
   padding-left: 16px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .store-tag {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
 }
 
 .nav-icon-btn {
