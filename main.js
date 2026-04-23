@@ -1,5 +1,12 @@
 // main.js
+import { getUser, updateAuthUI } from './auth.js'
+
 console.log('NODE Landing Page Initialized');
+
+// Initialize Auth
+getUser().then(user => {
+  updateAuthUI(user);
+});
 
 // Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');

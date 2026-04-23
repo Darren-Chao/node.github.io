@@ -248,6 +248,41 @@ h2 {
   gap: 16px;
 }
 
+.nav-user-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.nav-user-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--primary);
+}
+
+.nav-user-link svg {
+    color: var(--text-muted);
+}
+
+.nav-user-link:hover svg {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .nav-user-link span {
+        display: none;
+    }
+    .nav-user-link {
+        padding: 6px;
+    }
+}
+
 .search-btn {
   background: none;
   border: none;
