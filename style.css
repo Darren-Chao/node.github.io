@@ -1161,12 +1161,26 @@ h2 {
 
 @media (max-width: 768px) {
   .product-detail-info {
-    text-align: center;
+    text-align: left;
+    padding: 0 32px; /* Narrower width, centered feel */
   }
   
   .product-detail-info ul {
     text-align: left;
-    display: inline-block;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .product-detail-info ul li::before {
+    content: "→";
+    color: var(--primary-dark);
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .product-detail-description {
+    font-size: 0.95rem !important;
   }
 }
 .product-detail-info h1 {
