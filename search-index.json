@@ -62,7 +62,7 @@
   {
     "url": "kit1.html",
     "title": "NODE Kit 1 - NODE",
-    "content": "\ud83d\udce6 Flagship Kit NODE Starter Kit $149.00 The NODE Starter Kit is the perfect entry point into the world of cardboard robotics. \n                            It includes our modular Arduino-based controller, high-torque servos, and a variety of \n                            custom-designed cardboard templates to get you building in minutes. Sold Out Unable to Purchase Check out other products"
+    "content": "\ud83d\udce6 Flagship Kit NODE Starter Kit $59.99 The NODE Starter Kit is the perfect entry point into the world of cardboard robotics. \n                            It includes our modular Arduino-based controller, high-torque servos, and a variety of \n                            custom-designed cardboard templates to get you building in minutes. Sold Out Unable to Purchase Check out other products"
   },
   {
     "url": "makers.html",
@@ -77,7 +77,7 @@
   {
     "url": "sensor-kit.html",
     "title": "Sensor Expansion Kit - NODE",
-    "content": "\ud83d\udd0c Expansion Pack NODE Sensor Expansion Kit $79.00 Take your NODE projects to the next level with the Sensor Expansion Kit. \n                            Includes high-precision ultrasonic distance sensors, ambient light sensors, \n                            and sound detection modules. All sensors feature our standard plug-and-play connectors. Sold Out Unable to Purchase Check out other products"
+    "content": "\ud83d\udd0c Expansion Pack NODE Sensor Expansion Kit $29.99 Take your NODE projects to the next level with the Sensor Expansion Kit. \n                            Includes high-precision ultrasonic distance sensors, ambient light sensors, \n                            and sound detection modules. All sensors feature our standard plug-and-play connectors. Sold Out Unable to Purchase Check out other products"
   },
   {
     "url": "software-docs.html",
@@ -92,7 +92,7 @@
   {
     "url": "shop.html",
     "title": "Shop - NODE",
-    "content": "Shop Everything NODE Get started with the world's most versatile cardboard robotics ecosystem. Sold Out \ud83d\udce6 NODE Starter Kit The flagship starter kit for cardboard robotics and creative engineering. Includes everything you need to build your first 10 projects. Unable to Purchase Sold Out \ud83d\udd0c NODE Sensor Expansion Kit Expand your projects with ultrasonic, light, and sound sensors. Perfect for advanced interactive designs. Unable to Purchase Sold Out \ud83d\udcd0 Free NODE Connectors STL File Download Download our official 3D-printable connectors to build custom NODE-compatible parts. Unable to Purchase Your gateway to NODE Deals Sign up for email updates and be the first to know about deals and new products. Join"
+    "content": "Shop Everything NODE Get started with the world's most versatile cardboard robotics ecosystem. Sold Out \ud83d\udce6 NODE Starter Kit $59.99 The flagship starter kit for cardboard robotics and creative engineering. Includes everything you need to build your first 10 projects. Unable to Purchase Sold Out \ud83d\udd0c NODE Sensor Expansion Kit $29.99 Expand your projects with ultrasonic, light, and sound sensors. Perfect for advanced interactive designs. Unable to Purchase Sold Out \ud83d\udcd0 Free NODE Connectors STL File Download Free Download our official 3D-printable connectors to build custom NODE-compatible parts. Unable to Purchase Your gateway to NODE Deals Sign up for email updates and be the first to know about deals and new products. Join"
   },
   {
     "url": "cart.html",
@@ -102,6 +102,16 @@
   {
     "url": "connectors-stl.html",
     "title": "NODE Connectors STL - NODE",
-    "content": "\ud83d\udcd0 Digital Asset Free NODE Connectors STL File Download $0.00 Download our official 3D-printable connectors to build custom NODE-compatible parts. \n                            These files are optimized for FDM printing and allow you to create modular attachments \n                            for any cardboard project. Sold Out Unable to Purchase Check out other products"
+    "content": "\ud83d\udcd0 Digital Asset Free NODE Connectors STL File Download Free Download our official 3D-printable connectors to build custom NODE-compatible parts. \n                            These files are optimized for FDM printing and allow you to create modular attachments \n                            for any cardboard project. Sold Out Unable to Purchase Check out other products"
+  },
+  {
+    "url": "kit1-info.html",
+    "title": "NODE Starter Kit - Info",
+    "content": "\ud83d\udce6 Flagship Kit NODE Starter Kit The NODE Starter Kit is the foundation of the ecosystem. It provides the core controller and all essential components to transform ordinary cardboard into interactive robots. \u2022 Arduino-compatible NODE Controller \u2022 4x High-torque Micro Servos \u2022 10x Precision Cardboard Templates \u2022 Modular Plastic Connectors \u2022 Comprehensive Project Guide Buy Now"
+  },
+  {
+    "url": "sensor-kit-info.html",
+    "title": "Sensor Expansion Kit - Info",
+    "content": "\ud83d\udd0c Expansion Pack Sensor Expansion Kit Take your NODE projects to the next level with advanced sensory input. This kit allows your robots to see, hear, and react to the world around them. \u2022 Ultrasonic Distance Sensor \u2022 Ambient Light Sensor \u2022 Sound Level Module \u2022 RGB LED for Visual Feedback \u2022 Extra Connection Cables Buy Now"
   }
 ]
