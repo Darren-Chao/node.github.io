@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/main-BOmdwfbI.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BDRB6x0Q.css">
+  <script type="module" crossorigin src="./assets/main-DIjwtfAY.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-Db9Hx6lR.css">
 </head>
 <body id="top">
     <nav class="navbar">
@@ -29,8 +29,11 @@
                         <a href="#">Products <span class="arrow"></span></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-section">Kits</li>
-                            <li><a href="kit1-info.html">NODE Kit 1</a></li>
+                            <li><a href="kit1-info.html">Node Starter Kit</a></li>
                             <li><a href="sensor-kit-info.html">Sensor Expansion Kit</a></li>
+                            <li class="dropdown-section">System</li>
+                            <li><a href="hardware.html">Hardware</a></li>
+                            <li><a href="software.html">Software</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -44,8 +47,8 @@
                     <li class="dropdown">
                         <a href="#">Documentation <span class="arrow"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="hardware-docs.html">Hardware Docs</a></li>
-                            <li><a href="software-docs.html">Software Docs</a></li>
+                            <li><a href="hardware-docs.html">Hardware Documentation</a></li>
+                            <li><a href="software-docs.html">Software Documentation</a></li>
                             <li><a href="guides.html">Guides</a></li>
                         </ul>
                     </li>
@@ -70,26 +73,52 @@
         </div>
     </nav>
 
-    <main>
-        <section class="mission" style="padding: 120px 0; min-height: 60vh;">
-            <div class="container">
-                <div class="mission-content" style="text-align: center;">
-                    <div class="tag">Hardware</div>
-                    <h2>The Engineering Layer</h2>
-                    <p>Discover the sensors, connectors, and boards that make up the NODE ecosystem.</p>
-                </div>
-            </div>
-        </section>
+    <main class="content-page">
+        <div class="content-body">
+            <h1>Hardware</h1>
+
+            <h2>The NODE system</h2>
+            <p>The NODE hardware system is built around a simple idea: make physical building fast, flexible, and reliable without needing tools or complex assembly.</p>
+            <p>It combines a central computing module, plug-and-play motors, and a custom structural connector system designed specifically for cardboard construction.</p>
+
+            <h2>The NODE module</h2>
+            <p>At the center of every build is the NODE module, a compact controller that acts as the "brain" of the system.</p>
+            <p>Inside is a microcontroller (based on Arduino architecture), pre-configured to work out of the box. Users do not need to interact with the internal electronics directly.</p>
+            <p>The module includes a rechargeable battery and multiple color-coded ports for motors and future expansions. Once connected, it immediately powers and controls physical movement.</p>
+
+            <h2>Motors</h2>
+            <p>NODE uses simple DC motors that connect directly to the module through color-coded ports.</p>
+            <p>They are designed for immediate responsiveness, allowing students to see movement as soon as they connect their build.</p>
+            <p>The goal is not motor complexity, but clear cause-and-effect between input and physical motion.</p>
+
+            <h2>NODE connectors</h2>
+            <p>The structural system is built around custom-designed NODE connectors that attach cardboard pieces together.</p>
+            <p>Each connector uses a claw-based mechanism that grips cardboard on one end and locks into modular connector joints on the other.</p>
+            <p>When sliding onto the connector, the claws move easily and may feel slightly loose at first. However, once cardboard is inserted into the claw side, the geometry changes. The cardboard slightly opens the claw, which in turn tightens the grip on the connector side, locking everything firmly into place.</p>
+            <p>This creates a system that is easy to assemble and adjust when empty, but becomes structurally strong once built.</p>
+
+            <h2>Connector geometry</h2>
+            <p>NODE connectors come in a small set of standardized forms, including three-way and four-way joints.</p>
+            <p>Four-way connectors allow perpendicular structures, while three-way connectors support angled builds at roughly 60-degree relationships.</p>
+            <p>This gives students enough flexibility to build complex structures while still keeping the system simple and consistent.</p>
+
+            <h2>Designed for iteration</h2>
+            <p>The hardware system is built for rapid building and rebuilding.</p>
+            <p>Cardboard can be quickly replaced or modified, connectors can be reused, and electronic modules stay consistent across projects.</p>
+            <p>The goal is to make iteration feel natural, not slow or technical.</p>
+
+            <a href="software.html" class="btn btn-primary" style="margin-top: 24px; margin-bottom: 32px;">Check out software</a>
+        </div>
     </main>
 
     <footer class="site-footer">
         <div class="container connect-container">
             <div class="follow-us">
                 <div class="social-links">
-                    <a href="#" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg></a>
-                    <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-                    <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-                    <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    <a href="socials.html" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg></a>
+                    <a href="socials.html" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="socials.html" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="socials.html" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
                 </div>
             </div>
             <div class="newsletter">
@@ -107,6 +136,7 @@
                     <ul>
                         <li><a href="about.html">About NODE</a></li>
                         <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html" class="btn btn-primary btn-sm footer-btn">Contact Us</a></li>
                     </ul>
                 </div>
@@ -134,8 +164,8 @@
             <div class="container">
                 <p>&copy; 2026 NODE. All rights reserved.</p>
                 <div class="legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
                 </div>
             </div>
         </div>
