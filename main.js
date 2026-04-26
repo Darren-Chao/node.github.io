@@ -1,16 +1,15 @@
 // main.js
-import { getUser, updateAuthUI } from './auth.js'
-
 console.log('NODE Landing Page Initialized');
 
-// Auth check function
-const checkAuth = () => {
-  getUser().then(user => {
+// Auth check function (dynamic import so auth failures don't break the rest of the page)
+const checkAuth = async () => {
+  try {
+    const { getUser, updateAuthUI } = await import('./auth.js');
+    const user = await getUser();
     updateAuthUI(user);
-  }).catch(err => {
+  } catch (err) {
     console.error('Auth check failed:', err);
-    updateAuthUI(null);
-  });
+  }
 };
 
 // Mobile Menu Toggle
@@ -46,7 +45,7 @@ if (!mobileMenu) {
       <div class="mobile-category">
         <h3>Products</h3>
         <ul>
-          <li><a href="kit1-info.html">NODE Kit 1</a></li>
+          <li><a href="kit1-info.html">Node Starter Kit</a></li>
           <li><a href="sensor-kit-info.html">Sensor Expansion Kit</a></li>
         </ul>
       </div>
@@ -333,3 +332,104 @@ window.addEventListener('scroll', () => {
     return (start > 0 ? '...' : '') + snippet + (end < content.length ? '...' : '');
   }
 })();
+
+// Review Navigation
+document.addEventListener('DOMContentLoaded', () => {
+  const reviewsContainer = document.querySelector('.reviews-container');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  if (reviewsContainer && prevBtn && nextBtn) {
+    const getCardWidth = () => {
+      const card = reviewsContainer.querySelector('.review-card');
+      return card ? card.getBoundingClientRect().width + 24 : 300; // 24px gap
+    };
+    const scrollAmount = getCardWidth();
+    prevBtn.addEventListener('click', () => {
+      reviewsContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      reviewsContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+  }
+
+  // Creator Bio Expand/Collapse
+  document.querySelectorAll('.creator-read-more').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const wrapper = btn.previousElementSibling;
+      const isExpanded = wrapper.classList.toggle('expanded');
+      btn.textContent = isExpanded ? 'Show Less' : 'Keep Reading';
+    });
+  });
+
+  // Legal Pages Scrollspy
+  const legalSections = document.querySelectorAll('.legal-section');
+  const legalNavLinks = document.querySelectorAll('.legal-nav a');
+
+  if (legalSections.length > 0 && legalNavLinks.length > 0) {
+    const legalObserverOptions = {
+      root: null,
+      rootMargin: '-100px 0px -60% 0px', // Adjust to trigger when section is near top
+      threshold: 0
+    };
+
+    const legalObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Remove active from all
+          legalNavLinks.forEach(link => link.classList.remove('active'));
+          
+          // Add active to current
+          const id = entry.target.getAttribute('id');
+          const activeLink = document.querySelector(`.legal-nav a[href="#${id}"]`);
+          if (activeLink) {
+            activeLink.classList.add('active');
+          }
+        }
+      });
+    }, legalObserverOptions);
+
+    legalSections.forEach(section => {
+      legalObserver.observe(section);
+    });
+
+    // Smooth scrolling for legal nav links
+    legalNavLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }
+
+  // FAQ Accordion Logic
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    if (question && answer) {
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+          const otherAnswer = otherItem.querySelector('.faq-answer');
+          if(otherAnswer) otherAnswer.style.maxHeight = null;
+        });
+        
+        // Open this one if it wasn't already active
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    }
+  });
+
+});
